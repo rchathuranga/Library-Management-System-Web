@@ -21,9 +21,11 @@ $(window).on('load', function () {
 
         setTimeout(function () {
             $('#author-card>div').css('padding-left', '0px');
+            // $('#author-card>div>div').css('margin-left', '0px');
         }, 1000);
         setTimeout(function () {
             $('.pub-card').css('padding-left', '0px');
+            // $('.pub-card>div>div').css('margin-left', '0px');
         }, 1400);
 
     }, 300);

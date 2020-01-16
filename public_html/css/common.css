@@ -8,10 +8,12 @@ main {
     height: calc(100vh - 80px);
     background: white;
     position: relative;
+    top: -750px;
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
     z-index: 1;
     display: flex;
+    transition: top 1s;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
 }
 
@@ -50,15 +52,15 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 16vh;
+    height: 100vh;
     min-height: 100px;
     background: #6c63ff;
 }
 
-footer>div{
+footer>div {
     position: relative;
+    top: calc(100vh - 55px);;
     width: 100%;
-    top: 55px;
 }
 
 footer>div>form>button{

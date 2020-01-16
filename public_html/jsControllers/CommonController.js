@@ -1,12 +1,15 @@
+let login = "index.html";
 
-let login="index.html";
+$(function () {
+    $('main').css('top', '0px');
+});
 
 $.ajax({
-    url:"php/PhpSession.php",
-    method:'GET',
+    url: "php/PhpSession.php",
+    method: 'GET',
 }).done(function (res) {
-    if(res==login){
-        window.location.href = login;
+    if (res == login) {
+        window.location.href = "/LMS/public_html/";
     }
 });
 
@@ -14,14 +17,22 @@ $.ajax({
 
 // $('#Menu-DB').click(function () {});
 $('#Menu-BK').click(function () {
-    window.location.href = "book.html";
+    removeUI('book.html');
 });
 $('#Menu-BW').click(function () {
-    window.location.href = "borrow.html";
+    removeUI('borrow.html');
 });
 $('#Menu-MB').click(function () {
-    window.location.href = "member.html";
+    removeUI('member.html');
+
 });
 $('#Menu-ST').click(function () {
-    window.location.href = "setting.html";
+    removeUI('setting.html');
 });
+
+function removeUI(nextWindow) {
+    $('main').css('top', '-750px');
+    setTimeout(function () {
+        window.location.href = nextWindow;
+    }, 650);
+}
