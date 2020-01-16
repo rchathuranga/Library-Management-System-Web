@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
+<div id="animation"></div>
 <main>
     <section>
         <article id="arc-form">
@@ -17,7 +18,7 @@
                 <h1>Search Area</h1>
                 <form>
                     <label for="txtMemName" style="margin-right: 40px">Search Book</label>
-                    <input type="text" name="memName" class="sm-txt" id="txtMemName">
+                    <input class="sm-txt" id="txtMemName" name="searchBook" type="text">
                     <div id="book-card" class="author-card">
                         <div>
                             <div>
@@ -28,7 +29,7 @@
                         </div>
                     </div>
                     <label for="txtAuthor" style="margin-right: 30px">Select Author</label>
-                    <input type="text" name="" class="sm-txt" id="txtAuthor">
+                    <input class="sm-txt" id="txtAuthor" name="searchAuthor" type="text">
                     <div id="author-card" class="author-card">
                         <div>
                             <div>
@@ -39,7 +40,7 @@
                         </div>
                     </div>
                     <label for="txtPublisher" style="margin-right: 10px">Select Publisher</label>
-                    <input type="text" name="" class="sm-txt" id="txtPublisher">
+                    <input class="sm-txt" id="txtPublisher" name="searchPublisher" type="text">
                     <div class="pub-card">
                         <div>
                             <div>
@@ -64,7 +65,7 @@
             <div>
                 <form id="borrow-form">
                     <label for="txtMemId" style="margin-right: 30px">Select Member</label>
-                    <input type="text" class="sm-txt" id="txtMemId">
+                    <input class="sm-txt" id="txtMemId" name="searchMember" type="text">
                     <div id="memberList">
                         <div>
                         </div>

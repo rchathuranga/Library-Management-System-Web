@@ -386,10 +386,21 @@ form > label {
     font-family: Broadway;
 }
 
-#inner-cards>div>h3{
+#inner-cards > div > h3 {
     text-align: center;
     font-family: Righteous;
     font-size: 20px;
     position: relative;
     top: -10px;
+}
+
+#animation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000000;
+    background-color: #6c63ff;
+    transition: width 1s;
 }

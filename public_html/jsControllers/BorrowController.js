@@ -1,26 +1,34 @@
 $(window).on('load', function () {
-    loadAllBooks();
-    loadAllMembers();
-    loadAllAuthors();
-    loadAllPublisher();
 
-    var date=new Date();
-    $('#txtReturnDate').val(date.getFullYear()+"-"+(date.getMonth()+1)+"-"+date.getDate());
+    $('#animation').css('width', '0vw');
+    setTimeout(function () {
 
-    setTimeout(function () {
-        $('#book-card>div').css('padding-left','0px');
-    },600);
+        loadAllBooks();
+        loadAllMembers();
+        loadAllAuthors();
+        loadAllPublisher();
 
-    setTimeout(function () {
-        $('#memberList>div').css('padding-left','0px');
-    },800);
+        var date = new Date();
+        $('#txtReturnDate').val(date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate());
 
-    setTimeout(function () {
-        $('#author-card>div').css('padding-left','0px');
-    },1000);
-    setTimeout(function () {
-        $('.pub-card').css('padding-left','0px');
-    },1400);
+        setTimeout(function () {
+            $('#book-card>div').css('padding-left', '0px');
+        }, 600);
+
+        setTimeout(function () {
+            $('#memberList>div').css('padding-left', '0px');
+        }, 800);
+
+        setTimeout(function () {
+            $('#author-card>div').css('padding-left', '0px');
+        }, 1000);
+        setTimeout(function () {
+            $('.pub-card').css('padding-left', '0px');
+        }, 1400);
+
+    }, 300);
+
+
 });
 
 function loadAllBooks() {

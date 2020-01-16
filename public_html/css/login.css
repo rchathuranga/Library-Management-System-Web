@@ -87,9 +87,20 @@ main>section{
 }
 
 
-#art-login>div>form>button:hover{
+#art-login > div > form > button:hover {
     /*border-radius: 5px;*/
     /*background: #6c63ff;*/
     box-shadow: 1px 2px 6px 2px rgba(0, 0, 0, 0.25);
 
+}
+
+#animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0vw;
+    height: 100vh;
+    z-index: 1000000;
+    background-color: #6c63ff;
+    transition: width 1s;
 }

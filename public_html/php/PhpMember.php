@@ -46,6 +46,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
 } else {
-    $all = $connection->query("SELECT *,DATEDIFF(exp_date,reg_date) FROM member")->fetch_all();
+    $all = $connection->query("SELECT *,DATEDIFF(exp_date,curdate()) FROM member")->fetch_all();
     echo json_encode($all);
 }
