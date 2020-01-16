@@ -1,0 +1,395 @@
+
+#arc-form {
+    padding: 20px;
+    padding-right: 0;
+}
+
+
+#div-form > h1 {
+    font-family: Ethnocentric;
+    font-size: 34px;
+}
+
+#div-form > form {
+    margin-top: 20px;
+}
+
+form > label {
+    font-family: "PT Sans";
+}
+
+#div-form > form > input {
+    margin-bottom: 8px;
+}
+
+.author-card{
+    width: 100%;
+    height: 130px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.author-card::-webkit-scrollbar {
+    height: 5px;
+}
+
+.author-card::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.author-card::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #6c63ff;
+    outline: 1px solid slategrey;
+}
+
+.author-card>div{
+    width: max-content;
+    display: flex;
+    padding-left: 500px;
+    transition: padding-left 1s;
+}
+
+.author-card>div>div{
+    position: relative;
+    min-width: 180px;
+    max-width: fit-content;
+    height: 100px;
+    margin: 0 10px;
+    margin-top: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+    position: relative;
+    border: 2px solid #ffffff;
+    cursor: pointer;
+    transition: box-shadow .5s;
+}
+
+.author-card > div>div:hover {
+    box-shadow: 0px 0px 6px 3px #6c63ff70;
+}
+
+.author-card>div>div>:nth-child(1){
+    position: relative;
+    top: -15px;
+    left: 20px;
+    background: white;
+    width: 70px;
+    border: 2px solid #6c63ff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    font-family: Broadway;
+    text-align: center;
+}
+
+.author-card>div>div>:nth-child(2){
+    text-align: center;
+    margin: 0 5px;
+    font-family: Righteous;
+    font-size: 25px;
+}
+
+.author-card>div>div>:nth-child(3){
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    font-family: Righteous;
+    position: absolute;
+    bottom: 0px;
+    color: #707070;
+}
+/*===================================================*/
+
+.pub-card{
+    width: 100%;
+    height: 130px;
+    margin-bottom: 10px;
+    overflow-x: auto;
+    padding-left: 500px;
+    transition: padding-left 1s;
+    /*display: flex;*/
+    /*background: #f1f1f1;*/
+}
+
+.pub-card::-webkit-scrollbar {
+    height: 5px;
+}
+
+.pub-card::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.pub-card::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #6c63ff;
+    outline: 1px solid slategrey;
+}
+
+.pub-card>div{
+    width: max-content;
+    display: flex;
+}
+
+.pub-card>div>div{
+    min-width: 180px;
+    max-width: fit-content;
+    height: 100px;
+    margin: 0 10px;
+    margin-top: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+    position: relative;
+    cursor: pointer;
+    transition: box-shadow .5s;
+}
+
+.pub-card > div>div:hover {
+    box-shadow: 0px 0px 6px 3px #6c63ff70;
+}
+
+.pub-card>div>div>:nth-child(1){
+    position: relative;
+    top: -15px;
+    left: 20px;
+    background: white;
+    width: 70px;
+    border: 2px solid #6c63ff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    font-family: Broadway;
+    text-align: center;
+}
+
+.pub-card>div>div>:nth-child(2){
+    text-align: center;
+    /*margin: 0;*/
+    font-size: 25px;
+    margin: 0 5px;
+    font-family: Righteous;
+}
+
+.pub-card>div>div>:nth-child(3){
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    font-family: Righteous;
+    position: absolute;
+    bottom: 0px;
+    color: #707070;
+}
+
+/*===================================================*/
+#arc-list {
+    padding: 20px;
+}
+
+#div-search {
+    position: relative;
+}
+
+#div-search > h1 {
+    font-size: 37px;
+    font-family: Ethnocentric;
+}
+
+
+#borrow-form>div>button{
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: #6c63ff;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+    color: white;
+    font-family: Ethnocentric;
+    margin: 10px 0;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+#memberList{
+    width: 100%;
+    max-width: 482.237px;
+    height: 170px;
+}
+
+#memberList>div{
+    height: 160px;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 500px;
+    transition: padding-left 1s;
+}
+
+#memberList>div>div{
+    margin: 20px 10px;
+    width: 320px;
+    min-width: 300px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    height: 120px;
+    border-radius: 20px;
+    background: #fff;
+    padding-left: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    text-align: left;
+    border: 2px solid #ffffff;
+    transition: box-shadow .5s;
+}
+
+#memberList>div>div:hover{
+    box-shadow: 0px 0px 6px 3px #6c63ff70;
+}
+
+#memberList>div::-webkit-scrollbar {
+    height: 5px;
+}
+
+#memberList>div::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#memberList>div::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #6c63ff;
+    outline: 1px solid slategrey;
+}
+
+
+#memberList>div>div>:nth-child(1){
+    position: relative;
+    top: -15px;
+    left: 20px;
+    background: white;
+    width: 70px;
+    border: 2px solid #6c63ff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    font-family: Broadway;
+    text-align: center;
+}
+
+#memberList>div>div>:nth-child(2){
+    font-size: 20px;
+    font-family: Ethnocentric;
+}
+
+#memberList>div>div>:nth-child(3) {
+    font-size: 16px;
+    font-family: Righteous;
+    margin-bottom: 10px;
+}
+
+#memberList>div>div>:nth-child(4) {
+    width: 140px;
+    height: fit-content;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-family: Broadway;
+    font-size: 18px;
+    margin: 0;
+}
+
+.selectedBook{
+    width: 100%;
+    height: 180px;
+    text-align: center;
+}
+
+.selectedBook>div{
+    display: inline-block;
+    width: 380px;
+    height: 145px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    text-align: left;
+    margin: 20px 0;
+    transition: box-shadow .5s;
+    cursor: pointer;
+}
+
+.selectedBook>div:hover{
+    box-shadow: 0px 0px 6px 3px #6c63ff70;
+}
+
+.selectedBook>div>:nth-child(1){
+    position: relative;
+    top: -15px;
+    left: 20px;
+    background: white;
+    width: 70px;
+    border: 2px solid #6c63ff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    font-family: Broadway;
+    text-align: center;
+}
+
+.selectedBook>div>:nth-child(2){
+    font-size: 20px;
+    position: relative;
+    top: -8px;
+    font-family: Ethnocentric;
+    margin-left: 15px;
+}
+
+#inner-cards{
+    display: flex;
+    padding: 0 10px;
+}
+
+#inner-cards>div{
+    width: 165px;
+    min-width: 165px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 20px;
+    height: 79px;
+    margin: 0 8px;
+    text-align: center;
+}
+
+#inner-cards>div>div {
+    margin-top: 10px;
+    position: relative;
+    top: -15px;
+    display: inline-block;
+    background: white;
+    width: 140px;
+    border: 2px solid #6c63ff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    text-align: center;
+}
+
+#inner-cards>div>div>:nth-child(1){
+    font-size: 18px;
+    display: inline;
+    font-family: Righteous;
+}
+
+#inner-cards>div>div>:nth-child(2){
+    display: inline;
+    font-size: 18px;
+    margin-left: 10px;
+    font-family: Broadway;
+}
+
+#inner-cards>div>h3{
+    text-align: center;
+    font-family: Righteous;
+    font-size: 20px;
+    position: relative;
+    top: -10px;
+}

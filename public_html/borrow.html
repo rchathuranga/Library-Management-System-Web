@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Borrow | LMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/borrow.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<main>
+    <section>
+        <article id="arc-form">
+            <div id="div-form">
+                <h1>Search Area</h1>
+                <form>
+                    <label for="txtMemName" style="margin-right: 40px">Search Book</label>
+                    <input type="text" name="memName" class="sm-txt" id="txtMemName">
+                    <div id="book-card" class="author-card">
+                        <div>
+                            <div>
+                                <div>001</div>
+                                <h2>Romeo and Juliet</h2>
+                                <h4>10 available out of 15</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="txtAuthor" style="margin-right: 30px">Select Author</label>
+                    <input type="text" name="" class="sm-txt" id="txtAuthor">
+                    <div id="author-card" class="author-card">
+                        <div>
+                            <div>
+                                <div>001</div>
+                                <h2>JK Rowling</h2>
+                                <h4>United Kingdom</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="txtPublisher" style="margin-right: 10px">Select Publisher</label>
+                    <input type="text" name="" class="sm-txt" id="txtPublisher">
+                    <div class="pub-card">
+                        <div>
+                            <div>
+                                <div>001</div>
+                                <h2>Wijaya Publications</h2>
+                                <h4>Colombo</h4>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </section>
+    <section id="sec-img">
+        <img src="assets.img/undraw_book_lover_mkck.svg" alt="" width="90%">
+    </section>
+    <section>
+        <article id="arc-list">
+            <div id="div-search">
+                <h1>Borrow Review</h1>
+            </div>
+            <div>
+                <form id="borrow-form">
+                    <label for="txtMemId" style="margin-right: 30px">Select Member</label>
+                    <input type="text" class="sm-txt" id="txtMemId">
+                    <div id="memberList">
+                        <div>
+                        </div>
+                    </div>
+                    <label>Selected Book</label>
+                    <div class="selectedBook">
+                        <div></div>
+                    </div>
+                    <label for="txtReturnDate">Date of Return</label>
+                    <input type="text" name="returnDate" class="txt-field" id="txtReturnDate">
+                    <div>
+                        <button type="button" id="btnBorrow">Borrow</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </section>
+</main>
+<footer>
+    <div>
+        <form>
+            <button id="Menu-DB" type="button">DASHBOARD</button>
+            <button id="Menu-BW" type="button" class="current-ui">BORROW</button>
+            <button id="Menu-MB" type="button">MEMBER</button>
+            <button id="Menu-BK" type="button">BOOK</button>
+            <button id="Menu-ST" type="button">SETTING</button>
+<!--                        <button type="submit" id="btnUser">user</button>-->
+        </form>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="jsControllers/BorrowController.js"></script>
+<script src="jsControllers/CommonController.js"></script>
+</body>
+</html>

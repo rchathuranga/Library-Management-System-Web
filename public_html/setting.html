@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Settings | LMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<main>
+    <section>
+        <article class="arc-form">
+            <div class="div-form">
+                <h1>Author Area</h1>
+                <form id="formAuthor">
+                    <label for="txtAuthorName">Author Name</label>
+                    <input type="text" name="authorName" class="txt-field" id="txtAuthorName">
+                    <label for="txtAuthorNationality">Nationality</label>
+                    <input type="text" name="authorNationality" class="txt-field" id="txtAuthorNationality">
+                    <div>
+                        <button type="button" id="btnRegAuthor">REGISTER</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </section>
+    <section id="sec-img">
+        <img src="assets.img/undraw_personal_settings_kihd.svg" alt="" width="90%">
+    </section>
+    <section>
+        <article class="arc-form">
+            <div class="div-form">
+                <h1>Publisher Area</h1>
+                <form id="formPublisher">
+                    <label for="txtPubName">Publisher Name</label>
+                    <input type="text" name="pubName" class="txt-field" id="txtPubName">
+                    <label for="txtPubAddress">Address</label>
+                    <input type="text" name="pubAddress" class="txt-field" id="txtPubAddress">
+                    <div>
+                        <button type="button" id="btnRegPub">REGISTER</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </section>
+</main>
+<footer>
+    <div>
+        <form>
+            <button id="Menu-DB" type="button">DASHBOARD</button>
+            <button id="Menu-BW" type="button">BORROW</button>
+            <button id="Menu-MB" type="button">MEMBER</button>
+            <button id="Menu-BK" type="button">BOOK</button>
+            <button id="Menu-ST" type="button" class="current-ui">SETTING</button>
+            <!--            <button type="submit" id="btnUser">user</button>-->
+        </form>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="jsControllers/SettingController.js"></script>
+<script src="jsControllers/CommonController.js"></script>
+</body>
+</html>

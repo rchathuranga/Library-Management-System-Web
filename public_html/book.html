@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bookshelves | LMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/book.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<main>`
+    <section>
+        <article id="arc-form">
+            <div id="div-form">
+                <h1>BOOKSHELVES</h1>
+                <form id="bookForm">
+                    <label for="txtBookTitle">Book Title</label>
+                    <input type="text" name="bookTitle" class="txt-field" id="txtBookTitle">
+                    <label for="txtCopies">No of Copies</label>
+                    <input type="text" name="copies" class="txt-field" id="txtCopies">
+                    <label for="txtAuthor" style="margin-right: 30px">Select Author</label>
+                    <input type="text" class="sm-txt" id="txtAuthor">
+                    <div class="author-card">
+                        <div>
+                            <div>
+                                <div>001</div>
+                                <h2>JK Rowling</h2>
+                                <h4>United Kingdom</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <label for="txtPublisher" style="margin-right: 10px">Select Publisher</label>
+                    <input type="text" class="sm-txt" id="txtPublisher">
+                    <div class="pub-card">
+                        <div>
+                            <div>
+                                <div>001</div>
+                                <h2>Wijaya Publications</h2>
+                                <h4>Colombo</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <button id="btnREG" type="button">Register</button>
+                        <button id="btnDelete" type="button">Remove</button>
+                    </div>
+                </form>
+            </div>
+        </article>
+    </section>
+    <section id="sec-img">
+        <img src="assets.img/undraw_bookshelves_xekd.svg" alt="" width="90%">
+    </section>
+    <section>
+        <article id="arc-list">
+            <div id="div-search">
+                <h1>Book List</h1>
+                <form>
+                    <div id="searchMem">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search" class="txt-field">
+                    </div>
+                </form>
+            </div>
+            <div id="listMem">
+                <div>
+                    <div>
+                        <div>BK001</div>
+                        <h2>Romeo and Juliet</h2>
+                        <div class="inner-cards">
+                            <div>
+                                <div><h4>Author</h4><h5>001</h5></div>
+                                <h3>William Shakespeare</h3>
+                            </div>
+                            <div>
+                                <div><h4>Publisher</h4><h5>001</h5></div>
+                                <h3>Wijaya Publisher</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+<footer>
+    <div>
+        <form>
+            <button id="Menu-DB" type="button">DASHBOARD</button>
+            <button id="Menu-BW" type="button">BORROW</button>
+            <button id="Menu-MB" type="button">MEMBER</button>
+            <button id="Menu-BK" type="button" class="current-ui">BOOK</button>
+            <button id="Menu-ST" type="button">SETTING</button>
+            <!--            <button type="submit" id="btnUser">user</button>-->
+        </form>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="jsControllers/BookController.js"></script>
+<script src="jsControllers/CommonController.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+.arc-form {
+    padding: 20px;
+}
+
+.div-form {
+    /*padding: 20px;*/
+}
+
+.div-form > h1 {
+    font-family: Ethnocentric;
+    font-size: 34px;
+}
+
+.div-form > form {
+    margin-top: 30px;
+    /*background-color: red;*/
+}
+
+.div-form > form > label {
+    font-family: "PT Sans";
+}
+
+.div-form > form > input {
+    margin-bottom: 10px;
+}
+
+.div-form > form > div {
+    width: 90%;
+    margin: 20px 0;
+}
+
+.div-form > form > div > button {
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: #6c63ff;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+    color: white;
+    font-family: Ethnocentric;
+    font-size: 20px;
+}

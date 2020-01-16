@@ -1,0 +1,152 @@
+body {
+    overflow-y: hidden;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background: white;
+    position: relative;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    z-index: 1;
+    display: flex;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.33);
+}
+
+main > section {
+    width: 34%;
+}
+
+main > section:nth-child(1) {
+    width: 32%;
+    border-bottom-left-radius: 35px;
+    min-width: 491.513px;
+}
+
+main > section:nth-child(2) {
+    background: #F1F1F1;
+    position: relative;
+}
+
+#sec-img > img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+
+main > section:nth-child(3) {
+    border-bottom-right-radius: 35px;
+    min-width: 491.513px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 16vh;
+    min-height: 100px;
+    background: #6c63ff;
+}
+
+footer>div{
+    position: relative;
+    width: 100%;
+    top: 55px;
+}
+
+footer>div>form>button{
+    font-size: 18px;
+    position: relative;
+    width: 180px;
+    margin: 0 3%;
+    height: 35px;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+    color: #6c63ff;
+    font-family: Ethnocentric;
+}
+
+footer>div>form>button:focus{
+    outline: none;
+}
+
+.current-ui{
+    top: -10px;
+    background: #221e5d;
+    color: white;
+}
+
+.txt-field{
+    display: block;
+    width: 90%;
+    height: 35px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    transition: box-shadow .5s;
+}
+
+.txt-field:hover{
+    box-shadow: 0px 0px 6px rgba(108, 99, 255, 0.47);
+}
+
+.txt-field:focus{
+    background: #fff!important;
+    border: 2px solid #6c63ff!important;
+    box-shadow: 0px 0px 6px rgba(108, 99, 255, 0.47);
+}
+
+.sm-txt{
+    width: 20%;
+    height: 25px;
+    border-radius: 10px;
+    background: #f1f1f1;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    transition: box-shadow .5s;
+    font-size: 15px;
+}
+
+.sm-txt:hover{
+    box-shadow: 0px 0px 6px rgba(108, 99, 255, 0.47);
+}
+
+.sm-txt:focus{
+    background: #fff!important;
+    border: 2px solid #6c63ff!important;
+    box-shadow: 0px 0px 6px rgba(108, 99, 255, 0.47);
+}
+
+#btnDelete{
+    width: 160px!important;
+    margin-left: 30px;
+    color: #FF206E!important;
+    background-color: #ffffff!important;
+    border: 2px solid #FF206E!important;
+    display: none;
+}
+
+/*.notification{*/
+/*    width: 500px;*/
+/*    height: 300px;*/
+/*    background-color: #6c63ff;*/
+/*    position: absolute;*/
+/*    z-index: 11;*/
+/*    top: 0;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    margin: auto;*/
+/*}*/

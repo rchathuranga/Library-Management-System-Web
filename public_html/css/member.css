@@ -1,0 +1,240 @@
+
+#arc-form {
+    padding: 20px;
+}
+
+#div-form {
+    /*padding: 20px;*/
+}
+
+#div-form > h1 {
+    font-family: Ethnocentric;
+    font-size: 34px;
+}
+
+#div-form > form {
+    margin-top: 30px;
+    /*background-color: red;*/
+}
+
+#div-form > form > label {
+    font-family: "PT Sans";
+}
+
+#div-form > form > input {
+    margin-bottom: 10px;
+}
+
+#div-form > form > div {
+    width: 90%;
+    margin: 20px 0;
+}
+
+#div-form > form > div > button {
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background: #6c63ff;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+    color: white;
+    font-family: Ethnocentric;
+    font-size: 20px;
+}
+
+
+
+#div-card {
+    height: 10%;
+    display: flex;
+    /*background-color: red;*/
+}
+
+#div-card > div {
+    margin: 10px 10px;
+    width: 48%;
+    min-height: 120px;
+    height: 100%;
+    max-height: 160px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
+    position: relative;
+    cursor: pointer;
+}
+
+#div-card > div:hover {
+    box-shadow: 0px 0px 6px 3px #6c63ff70;
+}
+
+#div-card > div > :nth-child(1) {
+    text-align: center;
+    font-family: Righteous;
+}
+
+#div-card > div > :nth-child(2) {
+    position: relative;
+    font-family: Broadway;
+    color: #6c63ff;
+    font-size: 45px;
+    left: 30px;
+}
+
+#div-card > div > :nth-child(3) {
+    font-family: Broadway;
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+}
+
+#arc-list {
+    padding: 20px;
+}
+
+#div-search {
+    position: relative;
+}
+
+#div-search > h1 {
+    font-family: Ethnocentric;
+}
+
+#searchMem {
+    position: relative;
+}
+
+#searchMem > i {
+    font-size: 22px;
+    position: absolute;
+    margin: 6px 0;
+    margin-left: 10px;
+    color: #6c63ff;
+}
+
+#searchMem > input {
+    width: 110px;
+    padding-left: 50px;
+    transition: width 1s;
+}
+
+#searchMem > input::placeholder {
+    color: black;
+    font-family: Righteous;
+}
+
+#searchMem > input:focus {
+    width: 60%;
+}
+
+#listMem {
+    padding-top: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 30px 0;
+    height: 30em;
+    text-align: center;
+    transition: padding-top .5s;
+}
+
+#listMem::-webkit-scrollbar {
+    width: 5px;
+}
+
+#listMem::-webkit-scrollbar-track {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#listMem::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #6c63ff;
+    outline: 1px solid slategrey;
+}
+
+
+#listMem > div {
+    margin: 20px 0;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    height: 140px;
+    border-radius: 20px;
+    background: #fff;
+    padding-left: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    text-align: left;
+    border: 2px solid #ffffff;
+}
+
+#listMem > div:hover {
+    box-shadow: 0px 0px 6px rgba(108, 99, 255, 0.47);
+}
+
+#listMem > div:focus {
+    outline: none;
+    border: 2px solid #6c63ff;
+}
+
+
+#listMem > div > :nth-child(1) {
+    position: relative;
+    top: -15px;
+    left: 20px;
+    background: white;
+    width: 70px;
+    border: 2px solid #6c63ff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 10px;
+    font-family: Broadway;
+    text-align: center;
+}
+
+#listMem > div > :nth-child(2) {
+    font-size: 20px;
+    font-family: Ethnocentric;
+}
+
+#listMem > div > :nth-child(3) {
+    font-size: 16px;
+    font-family: Righteous;
+    margin-bottom: 10px;
+}
+
+#listMem > div > :nth-child(4) {
+    font-family: Broadway;
+    font-size: 34px;
+    width: 80px;
+    display: inline-block;
+    text-align: right;
+}
+
+#listMem > div > :nth-child(5) {
+    font-family: Broadway;
+    display: inline-block;
+    width: 50px;
+}
+
+#listMem > div > :nth-child(6) {
+    width: 140px;
+    height: fit-content;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+#listMem > div > :nth-child(6) > :nth-child(1) {
+    font-family: Broadway;
+    font-size: 18px;
+    margin: 0;
+}
+
+#listMem > div > :nth-child(6) > :nth-child(2) {
+    font-size: 18px;
+    font-family: Righteous;
+    width: 50%;
+}

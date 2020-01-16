@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Member Area | LMS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/member.css">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+<main>
+    <section>
+        <article id="arc-form">
+            <div id="div-form">
+                <h1>MEMBER AREA</h1>
+                <form id="formMem">
+                    <label for="txtMemName">Member Name</label>
+                    <input type="text" name="memName" class="txt-field" id="txtMemName">
+                    <label for="txtMemContact">Contact</label>
+                    <input type="text" name="memContact" class="txt-field" id="txtMemContact">
+                    <label for="txtMemAddress">Address</label>
+                    <input type="text" name="memAddress" class="txt-field" id="txtMemAddress">
+                    <label for="txtMemNIC">NIC Number</label>
+                    <input type="text" name="memNIC" class="txt-field" id="txtMemNIC">
+                    <div>
+                        <button type="button" id="btnRegister" name="btnMem" value="Register">Register</button>
+                        <button type="button" id="btnDelete" name="btnMem" value="Delete">Remove</button>
+                    </div>
+                </form>
+            </div>
+            <div id="div-card">
+                <div>
+                    <h5>Registration Date</h5>
+                    <h2>11-01</h2>
+                    <h5>2020</h5>
+                </div>
+                <div>
+                    <h5>Expiration Date</h5>
+                    <h2>11-01</h2>
+                    <h5>2021</h5>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section id="sec-img">
+        <img src="assets.img/undraw_Bibliophile_hwqc.svg" alt="" width="90%">
+    </section>
+    <section>
+        <article id="arc-list">
+            <div id="div-search">
+                <h1>Member List</h1>
+                <form>
+                    <div id="searchMem">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search" class="txt-field">
+                    </div>
+                </form>
+            </div>
+            <div id="listMem">
+                <div tabindex="0">
+                    <div>M001</div>
+                    <h2>Ravindu Chathuranga</h2>
+                    <h4>200115402137</h4>
+                    <h3>300</h3>
+                    <h5>days</h5>
+                    <div>
+                    <h3>0770180886</h3>
+                    <h4>Pokunuwita, Horana</h4>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+<footer>
+    <div>
+        <form>
+            <button id="Menu-DB" type="button">DASHBOARD</button>
+            <button id="Menu-BW" type="button">BORROW</button>
+            <button id="Menu-MB" type="button" class="current-ui">MEMBER</button>
+            <button id="Menu-BK" type="button">BOOK</button>
+            <button id="Menu-ST" type="button">SETTING</button>
+            <!--            <button type="submit" id="btnUser">user</button>-->
+        </form>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="jsControllers/MemberController.js"></script>
+<script src="jsControllers/CommonController.js"></script>
+</body>
+</html>
