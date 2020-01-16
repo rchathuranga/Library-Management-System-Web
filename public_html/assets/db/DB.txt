@@ -1,0 +1,79 @@
+create table author
+(
+    author_id   int auto_increment
+        primary key,
+    name        varchar(100) null,
+    Nationality varchar(20)  null
+);
+
+create table category
+(
+    cata_id  int auto_increment
+        primary key,
+    category varchar(50) null,
+    rack_no  int         null
+);
+
+create table member
+(
+    mem_id   int auto_increment
+        primary key,
+    mem_name varchar(100) null,
+    contact  varchar(12)  null,
+    address  text         null,
+    reg_date date         null,
+    exp_date date         null,
+    nic      varchar(12)  null
+);
+
+create table publisher
+(
+    pub_id    int auto_increment
+        primary key,
+    publisher varchar(100) null,
+    address   text         null
+);
+
+create table book
+(
+    book_id      int auto_increment
+        primary key,
+    title        varchar(100)         null,
+    no_of_copies int                  null,
+    availability tinyint(1) default 0 null,
+    author       int                  null,
+    publisher    int                  null,
+    constraint book_author_author_id_fk
+        foreign key (author) references author (author_id),
+    constraint book_publisher_pub_id_fk
+        foreign key (publisher) references publisher (pub_id)
+);
+
+create table book_category
+(
+    id       int auto_increment
+        primary key,
+    book     int null,
+    category int null,
+    constraint book_category_book_book_id_fk
+        foreign key (book) references book (book_id),
+    constraint book_category_category_cata_id_fk
+        foreign key (category) references category (cata_id)
+);
+
+create table borrow
+(
+    id          int auto_increment
+        primary key,
+    member      int                  null,
+    book        int                  null,
+    borrow_date date                 null,
+    return_date date                 null,
+    isReturn    tinyint(1) default 0 null,
+    constraint borrow_book_book_id_fk
+        foreign key (book) references book (book_id)
+            on update cascade on delete cascade,
+    constraint borrow_member_mem_id_fk
+        foreign key (member) references member (mem_id)
+);
+
