@@ -9,3 +9,73 @@
     background-color: #6c63ff;
     transition: width 1s;
 }
+
+#arc-form {
+    padding: 20px;
+}
+
+#arc-form > h1 {
+    font-family: Ethnocentric;
+    font-size: 34px;
+}
+
+main > section:nth-child(1) {
+    overflow: hidden;
+}
+
+#grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+#grid > div {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 12px;
+    height: 150px;
+    padding: 20px;
+    padding-top: 12px;
+    font-family: Righteous;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+    position: relative;
+}
+
+#grid > div:hover {
+    box-shadow: 0px 0px 6px 3px #6c63ff70;
+}
+
+#grid > div > h1 {
+    font-size: 37px;
+    color: #6c63ff;
+    font-family: Broadway;
+}
+
+#grid > div > h1 > i {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: black;
+    font-size: 28px;
+}
+
+#grid > div > h3 {
+    font-size: 28px;
+}
+
+#grid > div > h5 {
+    color: #9a9a9a;
+    font-size: 18px;
+}
+
+#arc-list {
+    padding: 20px;
+}
+
+#arc-list > h1 {
+    font-family: Ethnocentric;
+    font-size: 34px;
+}

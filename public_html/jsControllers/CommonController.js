@@ -40,12 +40,21 @@ function removeUI(nextWindow) {
 }
 
 $('#btnUser').click(function () {
-    $.ajax({
-        url: 'php/PhpSession.php',
-        data: 'session=logout',
-    }).done(function (res) {
-        if (res == 'index.html') {
-            window.location.href = res;
-        }
+
+    $('#logoutAnimation').css({
+        // 'left':'unset',
+        // 'right':'0px',
+        'width': '100vw',
     });
+
+    setTimeout(function () {
+        $.ajax({
+            url: 'php/PhpSession.php',
+            data: 'session=logout',
+        }).done(function (res) {
+            if (res == 'index.html') {
+                window.location.href = res;
+            }
+        });
+    }, 1000);
 });

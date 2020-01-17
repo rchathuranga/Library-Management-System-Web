@@ -153,6 +153,17 @@ footer>div>form>button:focus{
 }
 
 
+#logoutAnimation {
+    width: 0vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #6c63ff;
+    z-index: 10;
+    transition: width 1s;
+}
+
 /*.notification{*/
 /*    width: 500px;*/
 /*    height: 300px;*/
