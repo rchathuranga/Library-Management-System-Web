@@ -1,12 +1,11 @@
 $(window).on('load', function () {
 
-    $('#animation').css('width', '0vw');
     setTimeout(function () {
 
         loadAllBooks();
         loadAllMembers();
-        loadAllAuthors();
-        loadAllPublisher();
+        // loadAllAuthors();
+        // loadAllPublisher();
 
         var date = new Date();
         $('#txtReturnDate').val(date.getFullYear() + "-" + (date.getMonth() + 1) + "-" + date.getDate());
@@ -17,16 +16,16 @@ $(window).on('load', function () {
 
         setTimeout(function () {
             $('#memberList>div').css('padding-left', '0px');
-        }, 800);
-
-        setTimeout(function () {
-            $('#author-card>div').css('padding-left', '0px');
-            // $('#author-card>div>div').css('margin-left', '0px');
         }, 1000);
-        setTimeout(function () {
-            $('.pub-card').css('padding-left', '0px');
-            // $('.pub-card>div>div').css('margin-left', '0px');
-        }, 1400);
+
+        // setTimeout(function () {
+        //     $('#author-card>div').css('padding-left', '0px');
+        //     // $('#author-card>div>div').css('margin-left', '0px');
+        // }, 1000);
+        // setTimeout(function () {
+        //     $('.pub-card').css('padding-left', '0px');
+        //     // $('.pub-card>div>div').css('margin-left', '0px');
+        // }, 1400);
 
     }, 300);
 
@@ -175,9 +174,9 @@ function searchBookId(id) {
     $('.selectedBook').children().remove();
     $.ajax({
         url:"php/PhpBook.php",
-        method:"POST",
-        dataType:"json",
-        data:"btnBook=Search&bookId="+id,
+        method: "POST",
+        dataType: "json",
+        data: "btnBook=Search&bookId=" + id,
     }).done(function (res) {
         console.log(res);
         setSelectedBookUI(res);
@@ -185,18 +184,42 @@ function searchBookId(id) {
 }
 
 
+$('#btnSearch').click(function () {
+    $('#btnSearch').css('display', 'none');
+    $('#searchOption').css('padding-top', '0px');
+
+    loadAllAuthors();
+    loadAllPublisher();
+
+    setTimeout(function () {
+        $('#author-card>div').css('padding-left', '0px');
+        // $('#author-card>div>div').css('margin-left', '0px');
+    }, 1000);
+    setTimeout(function () {
+        $('.pub-card').css('padding-left', '0px');
+        // $('.pub-card>div>div').css('margin-left', '0px');
+    }, 1400);
+});
+
+
 $('#btnBorrow').click(function () {
 
     var formData = $('#borrow-form').serialize();
 
-    if(selectedMember!=null){
-        if(selectedBook!=null){
+    if (selectedMember != null) {
+        if (selectedBook != null) {
             $.ajax({
-                url:"php/PhpBorrow.php",
-                method:"POST",
-                data:formData+'&btnBorrow=Register&memId='+selectedMember+'&bookId='+selectedBook,
-            }).done(function () {
-                clearAll();
+                url: "php/PhpBorrow.php",
+                method: "POST",
+                data: formData + '&btnBorrow=Register&memId=' + selectedMember + '&bookId=' + selectedBook,
+            }).done(function (res) {
+                if (res == 1) {
+                    clearAll();
+                    alert("Done");
+                } else {
+                    alert("Fail");
+                }
+
             });
         }else {
             $('.selectedBook>div').css('border','2px solid #FF206E');

@@ -48,16 +48,26 @@ $("#btnRegister").click(function () {
             url: "php/PhpMember.php",
             method: "POST",
             data: formdata + "&btnMem=Register"
-        }).done(function (response) {
-            loadAllMembers();
+        }).done(function (res) {
+            if (res == 1) {
+                loadAllMembers();
+                alert("Done");
+            } else {
+                alert("Fail");
+            }
         });
     }else if($('#btnRegister').text()=="Modify") {
         $.ajax({
             url: "php/PhpMember.php",
             method: "POST",
-            data: formdata + "&memId="+ selectedMemberArray[0] +"&btnMem=Modify"
-        }).done(function (response) {
-            loadAllMembers();
+            data: formdata + "&memId=" + selectedMemberArray[0] + "&btnMem=Modify"
+        }).done(function (res) {
+            if (res == 1) {
+                loadAllMembers();
+                alert("Done");
+            } else {
+                alert("Fail");
+            }
         });
     }
 
@@ -76,7 +86,6 @@ function setCardClickEvent() {
         $('#listMem').children().css({
             'border-color': 'white'
         });
-
 
         var id=$($(this).children()[0]).text();
         $(this).css({
@@ -152,8 +161,13 @@ $('#btnDelete').click(function () {
         method:"POST",
         data:"memId="+selectedMemberArray[0]+"&btnMem=Delete"
     }).done(function (res) {
-        loadAllMembers();
-        clearAll();
+        if (res == 1) {
+            loadAllMembers();
+            clearAll();
+            alert("Done");
+        } else {
+            alert("Fail");
+        }
     })
 
 });

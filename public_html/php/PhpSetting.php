@@ -1,6 +1,7 @@
 <?php
 
 $connection = mysqli_connect("localhost", "root", "ijse", "lms", "3306");
+//$connection = mysqli_connect("localhost", "id8551666_rchathuranga417", "ijseweblms", "id8551666_lms", "3306");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_REQUEST["btnAuthor"])) {
@@ -27,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $name = $_REQUEST["pubName"];
                 $address = $_REQUEST["pubAddress"];
                 $sql = "INSERT INTO publisher(publisher, address) values ('$name','$address');";
-                $connection->query($sql);
+                echo $connection->query($sql);
             }
         }
     }

@@ -131,14 +131,27 @@ footer>div>form>button:focus{
     box-shadow: 0px 0px 6px rgba(108, 99, 255, 0.47);
 }
 
-#btnDelete{
-    width: 160px!important;
+#btnDelete {
+    width: 160px !important;
     margin-left: 30px;
-    color: #FF206E!important;
-    background-color: #ffffff!important;
-    border: 2px solid #FF206E!important;
+    color: #FF206E !important;
+    background-color: #ffffff !important;
+    border: 2px solid #FF206E !important;
     display: none;
 }
+
+
+#btnUser {
+    width: 50px !important;
+}
+
+#btnUser > i {
+    position: relative;
+    top: 2px;
+    font-size: 25px;
+    color: #6c63ff;
+}
+
 
 /*.notification{*/
 /*    width: 500px;*/

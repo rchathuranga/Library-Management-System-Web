@@ -2,6 +2,7 @@
 
 
 $connection = mysqli_connect("localhost", "root", "ijse", "lms", "3306");
+//$connection = mysqli_connect("localhost", "id8551666_rchathuranga417", "ijseweblms", "id8551666_lms", "3306");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $btn = $_REQUEST["btnBook"];

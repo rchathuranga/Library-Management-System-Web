@@ -4,12 +4,12 @@ $(window).on('load', function () {
     loadAllBooks();
 
     setTimeout(function () {
-        $('#listMem').css('padding-top','10px');
-        $('.author-card').css('padding-left','0px');
-    },600);
+        $('#listMem').css('padding-top', '10px');
+        $('.author-card').css('padding-left', '0px');
+    }, 600);
     setTimeout(function () {
-        $('.pub-card').css('padding-left','0px');
-    },1000);
+        $('.pub-card').css('padding-left', '0px');
+    }, 1000);
 });
 
 
@@ -142,32 +142,38 @@ $('#btnREG').click(function () {
 
     let formData = $('#bookForm').serialize();
 
-    if($('#btnREG').text()=="Register") {
+    if ($('#btnREG').text() == "Register") {
         if (selectedAuthor !== undefined && selectedPublisher !== undefined) {
             $.ajax({
                 url: "php/PhpBook.php",
                 method: "POST",
                 data: formData + "&author=" + selectedAuthor + "&publisher=" + selectedPublisher + "&btnBook=Register",
             }).done(function (res) {
-                if(res==1){
-
+                if (res == 1) {
+                    clearAll();
+                    loadAllBooks();
+                    alert('done');
+                } else {
+                    alert('fail');
                 }
-
-                clearAll();
-                loadAllBooks();
             });
         } else {
             alert("select");
         }
-    }else {
+    } else {
         if (selectedAuthor !== undefined && selectedPublisher !== undefined) {
             $.ajax({
                 url: "php/PhpBook.php",
                 method: "POST",
-                data: formData + "&author=" + selectedAuthor + "&publisher=" + selectedPublisher + "&btnBook=Modify&bookId="+selectedBook,
+                data: formData + "&author=" + selectedAuthor + "&publisher=" + selectedPublisher + "&btnBook=Modify&bookId=" + selectedBook,
             }).done(function (res) {
-                clearAll();
-                loadAllBooks();
+                if (res == 1) {
+                    clearAll();
+                    loadAllBooks();
+                    alert('done');
+                } else {
+                    alert('fail');
+                }
             });
         } else {
             alert("select");
@@ -187,18 +193,18 @@ function bookClickEvent() {
 
         var aid = $($($($($(this).children().get(2)).children().get(0)).children().get(0)).children().get(1)).text();
 
-        var authorId=parseInt(aid.split('A')[1]);
+        var authorId = parseInt(aid.split('A')[1]);
         findAuthorInList(authorId);
-        selectedAuthor=authorId;
+        selectedAuthor = authorId;
 
         var pid = $($($($($(this).children().get(2)).children().get(1)).children().get(0)).children().get(1)).text();
-        var pubId=(parseInt(pid.split('P')[1]));
-        selectedPublisher=pubId;
+        var pubId = (parseInt(pid.split('P')[1]));
+        selectedPublisher = pubId;
         findPublisherInList(pubId);
 
         // searchAuthor(parseInt(a.split('BK')[1]));
 
-        $('#btnDelete').css('display','inline');
+        $('#btnDelete').css('display', 'inline');
         $('#btnREG').text('Modify');
         $('#txtBookTitle').focus();
 
@@ -207,11 +213,11 @@ function bookClickEvent() {
 
 
 function clearAll() {
-    $('#btnDelete').css('display','');
+    $('#btnDelete').css('display', '');
     $('#listMem>div>div').css({'border': ''});
-    selectedBook=undefined;
-    selectedPublisher=undefined;
-    selectedAuthor=undefined;
+    selectedBook = undefined;
+    selectedPublisher = undefined;
+    selectedAuthor = undefined;
     $('.author-card>div').children().css({'border': ''});
     $('.pub-card>div').children().css({'border': ''});
     $('#txtCopies').val('');
@@ -255,23 +261,28 @@ function findPublisherInList(checkId) {
 }
 
 
-$('#txtBookTitle').on('keypress',function (e) {
-    if(e.keyCode===13){
-        if($('#txtBookTitle').val()===''){
+$('#txtBookTitle').on('keypress', function (e) {
+    if (e.keyCode === 13) {
+        if ($('#txtBookTitle').val() === '') {
             clearAll();
         }
     }
 });
 
 $('#btnDelete').click(function () {
-    if(selectedBook!==undefined) {
+    if (selectedBook !== undefined) {
         $.ajax({
             url: 'php/PhpBook.php',
             method: "POST",
             data: "btnBook=Delete&bookId=" + selectedBook,
-        }).done(function () {
-            loadAllBooks();
-            clearAll();
+        }).done(function (res) {
+            if (res == 1) {
+                loadAllBooks();
+                clearAll();
+                alert('DONE');
+            } else {
+                alert('Fail');
+            }
         });
     }
 

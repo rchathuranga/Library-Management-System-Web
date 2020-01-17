@@ -41,7 +41,7 @@ function login() {
 
             $('#animation').css({'width': '100vw'});
             setTimeout(function () {
-                window.location = nextPage;
+                window.location = "dashboard.html";
             }, 1000);
 
         } else if (response === "password error") {

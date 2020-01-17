@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="assets/img/Louise-French-Time-Out_featured-illustration(1).png" rel="icon">
     <link rel="stylesheet" href="css/borrow.css">
     <link rel="stylesheet" href="css/common.css">
 </head>
 <body>
-<div id="animation"></div>
 <main>
     <section>
         <article id="arc-form">
@@ -28,25 +28,28 @@
                             </div>
                         </div>
                     </div>
-                    <label for="txtAuthor" style="margin-right: 30px">Select Author</label>
-                    <input class="sm-txt" id="txtAuthor" name="searchAuthor" type="text">
-                    <div id="author-card" class="author-card">
-                        <div>
+                    <button id="btnSearch" type="button">Search Options</button>
+                    <div id="searchOption">
+                        <label for="txtAuthor" style="margin-right: 30px">Select Author</label>
+                        <input class="sm-txt" id="txtAuthor" name="searchAuthor" type="text">
+                        <div class="author-card" id="author-card">
                             <div>
-                                <div>001</div>
-                                <h2>JK Rowling</h2>
-                                <h4>United Kingdom</h4>
+                                <div>
+                                    <div>001</div>
+                                    <h2>JK Rowling</h2>
+                                    <h4>United Kingdom</h4>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <label for="txtPublisher" style="margin-right: 10px">Select Publisher</label>
-                    <input class="sm-txt" id="txtPublisher" name="searchPublisher" type="text">
-                    <div class="pub-card">
-                        <div>
+                        <label for="txtPublisher" style="margin-right: 10px">Select Publisher</label>
+                        <input class="sm-txt" id="txtPublisher" name="searchPublisher" type="text">
+                        <div class="pub-card">
                             <div>
-                                <div>001</div>
-                                <h2>Wijaya Publications</h2>
-                                <h4>Colombo</h4>
+                                <div>
+                                    <div>001</div>
+                                    <h2>Wijaya Publications</h2>
+                                    <h4>Colombo</h4>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -92,7 +95,7 @@
             <button id="Menu-MB" type="button">MEMBER</button>
             <button id="Menu-BK" type="button">BOOK</button>
             <button id="Menu-ST" type="button">SETTING</button>
-<!--                        <button type="submit" id="btnUser">user</button>-->
+            <button id="btnUser" type="button"><i class="fas fa-sign-out-alt"></i></button>
         </form>
     </div>
 </footer>

@@ -1,5 +1,6 @@
 <?php
 $connection = mysqli_connect("localhost", "root", "ijse", "lms", "3306");
+//$connection = mysqli_connect("localhost", "id8551666_rchathuranga417", "ijseweblms", "id8551666_lms", "3306");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $btn = $_REQUEST["btnBorrow"];
@@ -11,7 +12,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $returnDate=$_REQUEST["returnDate"];
 
             $sql = "INSERT INTO borrow(member, book, borrow_date, return_date) VALUES ('$memId','$bookId',curdate(),'2020-01-16')";
-            echo $sql;
             echo $connection->query($sql);
             break;
         }

@@ -2,6 +2,7 @@
 #arc-form {
     padding: 20px;
     padding-right: 0;
+    overflow-y: hidden;
 }
 
 
@@ -12,6 +13,7 @@
 
 #div-form > form {
     margin-top: 20px;
+    height: 500px;
 }
 
 form > label {
@@ -394,13 +396,22 @@ form > label {
     top: -10px;
 }
 
-#animation {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1000000;
-    background-color: #6c63ff;
-    transition: width 1s;
+#searchOption {
+    padding-top: 360px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 354.200px;
+    transition: padding-top 1s;
 }
+
+#btnSearch {
+    width: 160px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    font-family: Righteous;
+    color: #ffffff;
+    background-color: #6c63ff;
+    margin-top: 30px;
+}
+

@@ -1,0 +1,11 @@
+
+#animation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000000;
+    background-color: #6c63ff;
+    transition: width 1s;
+}

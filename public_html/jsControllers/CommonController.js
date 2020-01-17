@@ -14,8 +14,10 @@ $.ajax({
 });
 
 
+$('#Menu-DB').click(function () {
+    removeUI('dashboard.html');
+});
 
-// $('#Menu-DB').click(function () {});
 $('#Menu-BK').click(function () {
     removeUI('book.html');
 });
@@ -36,3 +38,14 @@ function removeUI(nextWindow) {
         window.location.href = nextWindow;
     }, 650);
 }
+
+$('#btnUser').click(function () {
+    $.ajax({
+        url: 'php/PhpSession.php',
+        data: 'session=logout',
+    }).done(function (res) {
+        if (res == 'index.html') {
+            window.location.href = res;
+        }
+    });
+});
