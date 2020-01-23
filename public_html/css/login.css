@@ -1,9 +1,18 @@
+@font-face {
+    font-family: "Ethnocentric-rg";
+    src: url("../assets/font/ethnocentric rg.ttf") format("opentype");
+}
 
-body,main{
+@font-face {
+    font-family: "Broadway-rg";
+    src: url("../assets/font/Broadway Regular.ttf") format("truetype");
+}
+
+body, main {
     background: #E3E3E3;
 }
 
-main>section{
+main > section {
     width: 922px;
     height: 500px;
     background: #fff;
