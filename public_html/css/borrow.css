@@ -7,7 +7,7 @@
 
 
 #div-form > h1 {
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
     font-size: 34px;
 }
 
@@ -73,7 +73,7 @@ form > label {
     box-shadow: 0px 0px 6px 3px #6c63ff70;
 }
 
-.author-card>div>div>:nth-child(1){
+.author-card>div>div>:nth-child(1) {
     position: relative;
     top: -15px;
     left: 20px;
@@ -82,22 +82,22 @@ form > label {
     border: 2px solid #6c63ff;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     text-align: center;
 }
 
-.author-card>div>div>:nth-child(2){
+.author-card>div>div>:nth-child(2) {
     text-align: center;
     margin: 0 5px;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     font-size: 25px;
 }
 
-.author-card>div>div>:nth-child(3){
+.author-card>div>div>:nth-child(3) {
     width: 100%;
     font-size: 14px;
     text-align: center;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     position: absolute;
     bottom: 0px;
     color: #707070;
@@ -153,7 +153,7 @@ form > label {
     box-shadow: 0px 0px 6px 3px #6c63ff70;
 }
 
-.pub-card>div>div>:nth-child(1){
+.pub-card>div>div>:nth-child(1) {
     position: relative;
     top: -15px;
     left: 20px;
@@ -162,23 +162,23 @@ form > label {
     border: 2px solid #6c63ff;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     text-align: center;
 }
 
-.pub-card>div>div>:nth-child(2){
+.pub-card>div>div>:nth-child(2) {
     text-align: center;
     /*margin: 0;*/
     font-size: 25px;
     margin: 0 5px;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
 }
 
-.pub-card>div>div>:nth-child(3){
+.pub-card>div>div>:nth-child(3) {
     width: 100%;
     font-size: 14px;
     text-align: center;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     position: absolute;
     bottom: 0px;
     color: #707070;
@@ -195,11 +195,11 @@ form > label {
 
 #div-search > h1 {
     font-size: 37px;
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
 }
 
 
-#borrow-form>div>button{
+#borrow-form>div>button {
     width: 200px;
     height: 35px;
     border: none;
@@ -207,7 +207,7 @@ form > label {
     background: #6c63ff;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
     color: white;
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
     margin: 10px 0;
     font-size: 20px;
     margin-top: 20px;
@@ -267,7 +267,7 @@ form > label {
 }
 
 
-#memberList>div>div>:nth-child(1){
+#memberList>div>div>:nth-child(1) {
     position: relative;
     top: -15px;
     left: 20px;
@@ -276,18 +276,18 @@ form > label {
     border: 2px solid #6c63ff;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     text-align: center;
 }
 
-#memberList>div>div>:nth-child(2){
+#memberList>div>div>:nth-child(2) {
     font-size: 20px;
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
 }
 
 #memberList>div>div>:nth-child(3) {
     font-size: 16px;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     margin-bottom: 10px;
 }
 
@@ -298,7 +298,7 @@ form > label {
     position: absolute;
     bottom: 0;
     right: 0;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     font-size: 18px;
     margin: 0;
 }
@@ -326,7 +326,7 @@ form > label {
     box-shadow: 0px 0px 6px 3px #6c63ff70;
 }
 
-.selectedBook>div>:nth-child(1){
+.selectedBook>div>:nth-child(1) {
     position: relative;
     top: -15px;
     left: 20px;
@@ -335,15 +335,15 @@ form > label {
     border: 2px solid #6c63ff;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     text-align: center;
 }
 
-.selectedBook>div>:nth-child(2){
+.selectedBook>div>:nth-child(2) {
     font-size: 20px;
     position: relative;
     top: -8px;
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
     margin-left: 15px;
 }
 
@@ -375,22 +375,22 @@ form > label {
     text-align: center;
 }
 
-#inner-cards>div>div>:nth-child(1){
+#inner-cards>div>div>:nth-child(1) {
     font-size: 18px;
     display: inline;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
 }
 
-#inner-cards>div>div>:nth-child(2){
+#inner-cards>div>div>:nth-child(2) {
     display: inline;
     font-size: 18px;
     margin-left: 10px;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
 }
 
 #inner-cards > div > h3 {
     text-align: center;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     font-size: 20px;
     position: relative;
     top: -10px;
@@ -409,7 +409,7 @@ form > label {
     height: 30px;
     border-radius: 5px;
     border: none;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     color: #ffffff;
     background-color: #6c63ff;
     margin-top: 30px;

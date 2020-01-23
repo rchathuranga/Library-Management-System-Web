@@ -15,7 +15,7 @@
 }
 
 #arc-form > h1 {
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
     font-size: 34px;
 }
 
@@ -38,7 +38,7 @@ main > section:nth-child(1) {
     height: 150px;
     padding: 20px;
     padding-top: 12px;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     cursor: pointer;
     transition: box-shadow 0.5s;
     position: relative;
@@ -51,7 +51,7 @@ main > section:nth-child(1) {
 #grid > div > h1 {
     font-size: 37px;
     color: #6c63ff;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
 }
 
 #grid > div > h1 > i {
@@ -76,6 +76,6 @@ main > section:nth-child(1) {
 }
 
 #arc-list > h1 {
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
     font-size: 34px;
 }

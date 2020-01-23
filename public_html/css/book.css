@@ -9,7 +9,7 @@
 }
 
 #div-form > h1 {
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric";
     font-size: 34px;
 }
 
@@ -34,7 +34,7 @@
     background: #6c63ff;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
     color: white;
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric";
     font-size: 20px;
 }
 
@@ -89,7 +89,7 @@
     box-shadow: 0px 0px 6px 3px #6c63ff70;
 }
 
-.author-card>div>div>:nth-child(1){
+.author-card>div>div>:nth-child(1) {
     position: relative;
     top: -15px;
     left: 20px;
@@ -98,22 +98,22 @@
     border: 2px solid #6c63ff;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     text-align: center;
 }
 
-.author-card>div>div>:nth-child(2){
+.author-card>div>div>:nth-child(2) {
     text-align: center;
     margin: 0 5px;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     font-size: 25px;
 }
 
-.author-card>div>div>:nth-child(3){
+.author-card>div>div>:nth-child(3) {
     width: 100%;
     font-size: 14px;
     text-align: center;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     position: absolute;
     bottom: 0px;
     color: #707070;
@@ -170,7 +170,7 @@
     box-shadow: 0px 0px 6px 3px #6c63ff70;
 }
 
-.pub-card>div>div>:nth-child(1){
+.pub-card>div>div>:nth-child(1) {
     position: relative;
     top: -15px;
     left: 20px;
@@ -179,23 +179,23 @@
     border: 2px solid #6c63ff;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     text-align: center;
 }
 
-.pub-card>div>div>:nth-child(2){
+.pub-card>div>div>:nth-child(2) {
     text-align: center;
     /*margin: 0;*/
     font-size: 25px;
     margin: 0 5px;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
 }
 
-.pub-card>div>div>:nth-child(3){
+.pub-card>div>div>:nth-child(3) {
     width: 100%;
     font-size: 14px;
     text-align: center;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     position: absolute;
     bottom: 0px;
     color: #707070;
@@ -211,7 +211,7 @@
 }
 
 #div-search > h1 {
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric";
 }
 
 #searchMem {
@@ -234,7 +234,7 @@
 
 #searchMem > input::placeholder {
     color: black;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
 }
 
 #searchMem > input:focus {
@@ -291,7 +291,7 @@
     box-shadow: 0px 0px 6px 3px #6c63ff70;
 }
 
-.selectedBook>div>:nth-child(1){
+.selectedBook>div>:nth-child(1) {
     position: relative;
     top: -15px;
     left: 20px;
@@ -300,15 +300,15 @@
     border: 2px solid #6c63ff;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     text-align: center;
 }
 
-.selectedBook>div>:nth-child(2){
+.selectedBook>div>:nth-child(2) {
     font-size: 20px;
     position: relative;
     top: -8px;
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric";
     margin-left: 15px;
 }
 
@@ -340,22 +340,22 @@
     text-align: center;
 }
 
-.inner-cards>div>div>:nth-child(1){
+.inner-cards>div>div>:nth-child(1) {
     font-size: 16px;
     display: inline;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
 }
 
-.inner-cards>div>div>:nth-child(2){
+.inner-cards>div>div>:nth-child(2) {
     display: inline;
     font-size: 16px;
     margin-left: 10px;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
 }
 
-.inner-cards>div>h3{
+.inner-cards>div>h3 {
     text-align: center;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     font-size: 20px;
     position: relative;
     top: -10px;

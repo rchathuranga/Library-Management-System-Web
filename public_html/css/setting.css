@@ -8,7 +8,7 @@
 }
 
 .div-form > h1 {
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
     font-size: 34px;
 }
 
@@ -38,7 +38,7 @@
     background: #6c63ff;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
     color: white;
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
     font-size: 20px;
 }
 
@@ -101,14 +101,14 @@
     border: 2px solid #6c63ff;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     text-align: center;
 }
 
 .author-card > div > div > :nth-child(2) {
     text-align: center;
     margin: 0 5px;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     font-size: 25px;
 }
 
@@ -116,7 +116,7 @@
     width: 100%;
     font-size: 14px;
     text-align: center;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     position: absolute;
     bottom: 0px;
     color: #707070;
@@ -180,7 +180,7 @@
     border: 2px solid #6c63ff;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     text-align: center;
 }
 
@@ -189,14 +189,14 @@
     /*margin: 0;*/
     font-size: 25px;
     margin: 0 5px;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
 }
 
 .pub-card > div > div > :nth-child(3) {
     width: 100%;
     font-size: 14px;
     text-align: center;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     position: absolute;
     bottom: 0px;
     color: #707070;

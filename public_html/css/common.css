@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Ethnocentric-rg";
+    src: url("../assets/font/ethnocentric rg.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Broadway-rg";
+    src: url("../assets/font/Broadway Regular.ttf") format("truetype");
+}
+
 body {
     overflow-y: hidden;
     height: 100vh;
@@ -57,13 +67,13 @@ footer {
     background: #6c63ff;
 }
 
-footer>div {
+footer > div {
     position: relative;
     top: calc(100vh - 55px);;
     width: 100%;
 }
 
-footer>div>form>button{
+footer > div > form > button {
     font-size: 18px;
     position: relative;
     width: 180px;
@@ -74,20 +84,20 @@ footer>div>form>button{
     border: none;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
     color: #6c63ff;
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric";
 }
 
-footer>div>form>button:focus{
+footer > div > form > button:focus {
     outline: none;
 }
 
-.current-ui{
+.current-ui {
     top: -10px;
     background: #221e5d;
     color: white;
 }
 
-.txt-field{
+.txt-field {
     display: block;
     width: 90%;
     height: 35px;
@@ -99,17 +109,17 @@ footer>div>form>button:focus{
     transition: box-shadow .5s;
 }
 
-.txt-field:hover{
+.txt-field:hover {
     box-shadow: 0px 0px 6px rgba(108, 99, 255, 0.47);
 }
 
-.txt-field:focus{
-    background: #fff!important;
-    border: 2px solid #6c63ff!important;
+.txt-field:focus {
+    background: #fff !important;
+    border: 2px solid #6c63ff !important;
     box-shadow: 0px 0px 6px rgba(108, 99, 255, 0.47);
 }
 
-.sm-txt{
+.sm-txt {
     width: 20%;
     height: 25px;
     border-radius: 10px;
@@ -121,13 +131,13 @@ footer>div>form>button:focus{
     font-size: 15px;
 }
 
-.sm-txt:hover{
+.sm-txt:hover {
     box-shadow: 0px 0px 6px rgba(108, 99, 255, 0.47);
 }
 
-.sm-txt:focus{
-    background: #fff!important;
-    border: 2px solid #6c63ff!important;
+.sm-txt:focus {
+    background: #fff !important;
+    border: 2px solid #6c63ff !important;
     box-shadow: 0px 0px 6px rgba(108, 99, 255, 0.47);
 }
 

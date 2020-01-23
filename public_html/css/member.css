@@ -8,7 +8,7 @@
 }
 
 #div-form > h1 {
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
     font-size: 34px;
 }
 
@@ -38,7 +38,7 @@
     background: #6c63ff;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
     color: white;
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
     font-size: 20px;
 }
 
@@ -69,19 +69,19 @@
 
 #div-card > div > :nth-child(1) {
     text-align: center;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
 }
 
 #div-card > div > :nth-child(2) {
     position: relative;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     color: #6c63ff;
     font-size: 45px;
     left: 30px;
 }
 
 #div-card > div > :nth-child(3) {
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     font-size: 25px;
     position: absolute;
     right: 10px;
@@ -97,7 +97,7 @@
 }
 
 #div-search > h1 {
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
 }
 
 #searchMem {
@@ -120,7 +120,7 @@
 
 #searchMem > input::placeholder {
     color: black;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
 }
 
 #searchMem > input:focus {
@@ -188,23 +188,23 @@
     border: 2px solid #6c63ff;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.16);
     border-radius: 10px;
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     text-align: center;
 }
 
 #listMem > div > :nth-child(2) {
     font-size: 20px;
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
 }
 
 #listMem > div > :nth-child(3) {
     font-size: 16px;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     margin-bottom: 10px;
 }
 
 #listMem > div > :nth-child(4) {
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     font-size: 34px;
     width: 80px;
     display: inline-block;
@@ -212,7 +212,7 @@
 }
 
 #listMem > div > :nth-child(5) {
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     display: inline-block;
     width: 50px;
 }
@@ -228,13 +228,13 @@
 
 
 #listMem > div > :nth-child(6) > :nth-child(1) {
-    font-family: Broadway;
+    font-family: "Broadway-rg";
     font-size: 18px;
     margin: 0;
 }
 
 #listMem > div > :nth-child(6) > :nth-child(2) {
     font-size: 18px;
-    font-family: Righteous;
+    font-family: 'Righteous', cursive;
     width: 50%;
 }

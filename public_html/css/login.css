@@ -45,7 +45,7 @@ main>section{
 }
 
 #art-login>div>h1{
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
     margin-bottom: 50px;
 }
 
@@ -66,7 +66,7 @@ main>section{
     transition: box-shadow.5s;
 }
 
-#art-login>div>form>button{
+#art-login>div>form>button {
     width: 220px;
     height: 35px;
     border: none;
@@ -75,7 +75,7 @@ main>section{
     color: #ffffff;
     font-size: 20px;
     display: block;
-    font-family: Ethnocentric;
+    font-family: "Ethnocentric-rg";
     margin: 50px auto;
     transition: all .3s;
 }
