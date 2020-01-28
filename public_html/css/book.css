@@ -9,7 +9,7 @@
 }
 
 #div-form > h1 {
-    font-family: "Ethnocentric";
+    font-family: "Ethnocentric-rg";
     font-size: 34px;
 }
 
@@ -34,7 +34,7 @@
     background: #6c63ff;
     box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.16);
     color: white;
-    font-family: "Ethnocentric";
+    font-family: "Ethnocentric-rg";
     font-size: 20px;
 }
 
@@ -211,7 +211,7 @@
 }
 
 #div-search > h1 {
-    font-family: "Ethnocentric";
+    font-family: "Ethnocentric-rg";
 }
 
 #searchMem {
@@ -308,7 +308,7 @@
     font-size: 20px;
     position: relative;
     top: -8px;
-    font-family: "Ethnocentric";
+    font-family: "Ethnocentric-rg";
     margin-left: 15px;
 }
 

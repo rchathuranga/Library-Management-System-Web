@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <title>Borrow | LMS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="#6c63ff" name="theme-color">
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link href="assets/img/Louise-French-Time-Out_featured-illustration(1).png" rel="icon">
     <link rel="stylesheet" href="css/borrow.css">
     <link rel="stylesheet" href="css/common.css">
+    <link href="css/media/common.css" rel="stylesheet">
+    <link href="css/media/borrow.css" rel="stylesheet">
 </head>
 <body>
 <div id="logoutAnimation"></div>
@@ -98,11 +101,25 @@
             <button id="Menu-BK" type="button">BOOK</button>
             <button id="Menu-ST" type="button">SETTING</button>
             <button id="btnUser" type="button"><i class="fas fa-sign-out-alt"></i></button>
+            <div class="upDown"><i class="fas fa-sort-up"></i></div>
         </form>
     </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="jsControllers/BorrowController.js"></script>
 <script src="jsControllers/CommonController.js"></script>
+<script>
+
+    $('#btnSearch').click(function () {
+        if ($(window).width() <= 922) {
+
+            // is mobile device
+            $('main > section:nth-child(1)').css('height', '650px');
+        } else {
+            // $('main').css('top', '0px');
+        }
+    })
+
+</script>
 </body>
 </html>

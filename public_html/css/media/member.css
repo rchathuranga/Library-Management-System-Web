@@ -1,0 +1,14 @@
+@media all and (max-width: 1000px) {
+
+    main > section:nth-child(1) {
+        height: 650px;
+    }
+
+    #btnDelete {
+        margin-left: 20px;
+    }
+
+    #listMem {
+        margin-bottom: 0;
+    }
+}

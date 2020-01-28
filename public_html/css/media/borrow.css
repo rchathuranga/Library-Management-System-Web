@@ -1,0 +1,19 @@
+@media (max-width: 1000px) {
+    main > section:nth-child(1) {
+        /*height: 650px;*/
+        transition: height .5s;
+    }
+
+    .author-card > div, .pub-card {
+        padding-left: 900px;
+        transition: padding-left 1.5s;
+    }
+
+    #div-search > h1 {
+        margin-bottom: 30px;
+    }
+
+    #memberList {
+        max-width: unset;
+    }
+}

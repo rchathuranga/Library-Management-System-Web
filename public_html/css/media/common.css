@@ -1,0 +1,136 @@
+@media all and (max-width: 1081px) and (min-width: 1000px) {
+    main > section:nth-child(1) {
+        border-right: 2px solid #6C63FF;
+        width: 50%;
+    }
+
+    main > section:nth-child(2) {
+        display: none;
+    }
+
+    main > section:nth-child(3) {
+        width: 50%;
+    }
+
+    footer {
+        /*display: none;*/
+    }
+
+    footer > div > form > button {
+        margin: 0 5px;
+    }
+
+    #btnUser {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1000px) {
+
+    body {
+        overflow-y: unset;
+    }
+
+    main {
+        display: block;
+        /*width: 100%;*/
+        height: unset;
+        background: white;
+        position: relative;
+        top: -750px;
+        border-bottom-left-radius: unset;
+        border-bottom-right-radius: unset;
+        z-index: 1;
+        transition: top 1s;
+        box-shadow: unset;
+    }
+
+    main > section {
+        width: 100%;
+        height: 500px;
+        min-width: unset !important;
+    }
+
+    main > section:nth-child(1) {
+        border-right: none;
+        width: 100%;
+        height: 500px;
+    }
+
+    main > section:nth-child(3) {
+        width: 100%;
+        height: 500px;
+    }
+
+    #grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    #sec-img {
+        display: none;
+    }
+
+    footer {
+        display: block;
+        height: 460px;
+        top: -420px;
+        z-index: 1;
+        transition: top .8s, border-bottom-left-radius 1s, border-bottom-right-radius 1s;
+        /*border-bottom-left-radius: 35px;*/
+        /*border-bottom-right-radius: 35px;*/
+    }
+
+    footer > div {
+        position: unset;
+        top: 0;
+        width: 100%;
+    }
+
+    footer > div > form {
+        text-align: center;
+        width: 70%;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    footer > div > form > button {
+        position: relative;
+        left: -800px;
+        display: inline-block;
+        width: 100%;
+        height: 50px;
+        margin: 15px 0;
+        transition: left 0.8s;
+    }
+
+    .current-ui {
+        top: 0px;
+    }
+
+    #btnUser {
+        position: absolute !important;
+        right: -17%;
+        bottom: 12%;
+        left: unset;
+    }
+
+    .upDown {
+        display: block;
+        /* background: red; */
+        font-size: 60px;
+    }
+
+    .upDown > i {
+        color: white;
+        cursor: pointer;
+        transition: transform 1s, top .5s;
+        position: relative;
+        top: -20px;
+        transform: rotate(180deg);
+        text-shadow: -2px -3px 6px rgba(0, 0, 0, 0.3);
+    }
+
+}

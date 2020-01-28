@@ -1,0 +1,10 @@
+@media all and (max-width: 1000px) {
+    #grid {
+        overflow-x: auto;
+        padding: 20px;
+    }
+
+    #grid > div {
+        min-width: 220px;
+    }
+}

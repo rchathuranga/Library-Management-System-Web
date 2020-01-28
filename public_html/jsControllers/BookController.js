@@ -206,7 +206,7 @@ function bookClickEvent() {
 
         $('#btnDelete').css('display', 'inline');
         $('#btnREG').text('Modify');
-        $('#txtBookTitle').focus();
+        // $('#txtBookTitle').focus();
 
     });
 }
@@ -222,7 +222,20 @@ function clearAll() {
     $('.pub-card>div').children().css({'border': ''});
     $('#txtCopies').val('');
     $('#txtBookTitle').val('');
+
+    $('#txtPublisher').val('');
+    $('#txtAuthor').val('');
+
     $('#btnREG').text('Register');
+
+    $('.author-card').animate({
+        scrollLeft: 0
+    }, 800, function () {
+    });
+    $('.pub-card').animate({
+        scrollLeft: 0
+    }, 800, function () {
+    });
 }
 
 
@@ -238,6 +251,10 @@ function findAuthorInList(checkId) {
         if (rid == checkId) {
             $($('.author-card>div').children().get()[i]).css({
                 'border': '2px solid #6c63ff',
+            });
+            $('.author-card').animate({
+                scrollLeft: ($($('.author-card').children().children().get()[i]).offset().left) - 30
+            }, 800, function () {
             });
         }
     }
@@ -255,6 +272,10 @@ function findPublisherInList(checkId) {
         if (rid == checkId) {
             $($('.pub-card>div').children().get()[i]).css({
                 'border': '2px solid #6c63ff',
+            });
+            $('.pub-card').animate({
+                scrollLeft: ($($('.pub-card').children().children().get()[i]).offset().left) - 30
+            }, 800, function () {
             });
         }
     }
@@ -285,5 +306,32 @@ $('#btnDelete').click(function () {
             }
         });
     }
+});
 
+$('#txtAuthor').on('keydown', function (e) {
+    var text = $('#txtAuthor').val();
+    if (text.length === 4) {
+        var id = parseInt(text.split('A')[1]);
+        selectedAuthor = id;
+        findAuthorInList(id);
+    } else {
+        $('#txtAuthor').css("border", "2px solid rgb(255, 0, 110)");
+        setTimeout(function () {
+            $('#txtAuthor').css("border", "");
+        }, 1800);
+    }
+});
+
+$('#txtPublisher').on('keydown', function (e) {
+    var text = $('#txtPublisher').val();
+    if (text.length === 4) {
+        var id = parseInt(text.split('P')[1]);
+        selectedPublisher = id;
+        findPublisherInList(id);
+    } else {
+        $('#txtPublisher').css("border", "2px solid rgb(255, 0, 110)");
+        setTimeout(function () {
+            $('#txtPublisher').css("border", "");
+        }, 1800);
+    }
 });

@@ -1,0 +1,13 @@
+@media all and (max-width: 1000px) {
+    main > section:nth-child(1) {
+        height: 700px;
+    }
+
+    .author-card {
+        padding-left: 1000px;
+    }
+
+    .pub-card {
+        padding-left: 1000px;
+    }
+}
